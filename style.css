@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Text-container {
+    background-color: white;
+    margin-top: 15vh;
+    width: 42%;
+    height: auto;
+    border-radius: 3%;
+    padding: 2.5% 2.5%;
+    box-sizing: border-box;
+  }
+  
+  .faq-title {
+    color: hsl(292, 42%, 14%);
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5%;
+  }
+  
+  span {
+    height: auto;
+    width: 100%;
+    color: hsl(292, 42%, 14%);
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  span:hover {
+    color: hsl(293, 77%, 39%);
+    cursor: pointer;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: rgba(211, 211, 211, 0.692);
+    border: none;
+    transition: all 0.5s linear, margin-top 0.5s linear;
+    margin-bottom: 5%;
+  }
+  
+  .exp {
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    box-sizing: border-box;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s linear, max-height 0.5s linear;
+    margin: 2.5% 0;
+  }
+  
+  .exp.active {
+    opacity: 1;
+    max-height: 200px;
+    margin: 2.5% 0%;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media (max-width: 375px) {
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+    .Text-container {
+      width: 90%;
+      left: 5%;
+      padding: 8% 10%;
+      padding-bottom: 4%;
+    }
+  
+    .faq-title {
+      font-size: 40px;
+    }
+  
+    span {
+      font-size: 16px;
+    }
+  
+    .exp {
+      font-size: 14px;
+    }
+  }
